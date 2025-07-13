@@ -44,3 +44,5 @@ prisma/migrations/
 # Temp files
 tmp/
 temp/
+
+/src/generated/prisma
