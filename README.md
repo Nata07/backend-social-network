@@ -23,7 +23,7 @@ API RESTful desenvolvida com Node.js, TypeScript, Express e PostgreSQL, oferecen
 
 1. Clone o repositório:
 ```bash
-git clone [url-do-repositorio]
+git clone [https://github.com/Nata07/backend-social-network]
 cd [nome-do-repositorio]/backend
 ```
 
