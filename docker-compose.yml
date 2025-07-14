@@ -6,7 +6,7 @@ services:
     ports:
       - "3001:3001"
     environment:
-      - DATABASE_URL=postgresql://user:password@localhost:5432/social_network
+      - DATABASE_URL=postgresql://user:password@postgres:5432/social_network
       - JWT_SECRET=social_network
     depends_on:
       - postgres
