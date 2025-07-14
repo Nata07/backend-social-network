@@ -1,4 +1,6 @@
 import express from 'express';
+import swaggerUi from 'swagger-ui-express';
+import { specs } from './config/swagger';
 import cors from 'cors';
 import { PrismaClient } from '@prisma/client';
 import { authRouter } from './routes/auth.routes';
@@ -15,6 +17,9 @@ app.use(express.json());
 app.use('/api/auth', authRouter);
 app.use('/api/posts', postRouter);
 app.use('/api', likeRouter);
-app.use('/api', commentRouter);
+app.use('/api/comments', commentRouter);
+
+// Swagger UI
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 export { app, prisma };
